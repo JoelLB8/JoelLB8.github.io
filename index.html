@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treball de Recerca</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estils.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Treball de Recerca</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#introduccio" class="nav__links">Introducció</a> 
+                </li>
+                <li class="nav__items">
+                    <a href="#objectiu" class="nav__links">Objectiu
+                    </a> 
+                </li>
+                 <li class="nav__items">
+                    <a href="#funcionament" class="nav__links">Funcionament</a> 
+                </li>
+                 <li class="nav__items">
+                    <a href="#memoria" class="nav__links">Memòria</a> 
+                </li>
+            </ul>
+        </nav>
+          
+        <section class="hero__container container">
+            <h1 class="hero__title">Treball de Recerca</h1>
+            <p class="hero__paragraph">Hola, soc Joel López, estudiant de l'Institut Ramon Berenguer IV de Cambrils i aquesta és la part pràctica del meu <strong>treball de recerca</strong>.</p>
+        </section>
+    </header>
+
+    <main class="main">
+        <section class="introduccio section" id="introduccio">
+            <div class="introduccio__container container">
+                <h2 class="section__title">Introducció</h2>
+                <p class="introduccio__paragraph">A l'hora de navegar per internet mai ens preguntem quines són les dades que estem compartint, alguns fins i tot no saben que estan compartint informació. És per això que és de vital importància conèixer de quina manera ens exposem en visitar segons quines webs i com ens podem afectar la recopilació d'aquesta informació.</p> <p class="introduccio__paragraph">Des que en tinc memòria he conegut usuaris que naveguen per la xarxa sense cap preocupació, exposant informació seva a cents de llocs web sense molestar-se en pensar si poden fer servir aquestes dades per fins il·legítims. Per tant, he decidit crear aquest treball, per intentar divulgar que l'internet no és cap broma i s'han de prendre certes precaucions.</p>
+            </div>
+        </section>
+
+        <section class="objectiu section" id="objectiu">
+            <div class="objectiu__container container">
+                <h2 class="section__title">Objectiu de la pàgina</h2>
+                <p class="objectiu__paragraph">L'objectiu d'aquesta pàgina és mostrar com una pàgina, tot i que sembli fiable, pot aprofitar aquest excés de confiança per instal·lar arxius maliciosos en el teu ordinador, ja sigui explicitament (és a dir descarregues l'arxiu a propósit però no és el que esperaves) o amb algun mètode de descarrega oculta (que era el que tenia pensat en un principi, però supera per molt les meves capacitats).</p> <p class="objectiu__paragraph">Així que al final la pàgina consisteix en fer una petita simulació on ens hem de posar en la pell d'un usuari que navega per internet i es troba amb una pàgina maliciosa, pàgina en la qual descarrega per error un ransomware (un programa que "segresta" el teu dispositiu bloquejant-lo fins pagar un rescat).<br>A continuació podeu trobar el funcionament de la simulació.</p>
+        </section>
+
+        <section class="funcionament section" id="funcionament">
+            <div class="funcionament__container container">
+                <h2 class="section__title">Funcionament</h2>
+                <p class="funcionament__paragraph">IMPORTANT!! LLEGEIX AMB ATENCIÓ TOTA LA EXPLICACIÓ.<br>En aquesta petita simulació descarregaràs un arxiu titolat "HackTdR.bat", que com el seu propi nom indica, és un fitxer batch que simula un ransomware. No té res a veure amb un ransomware real i no farà cap dany al teu ordinador, però serveix com una demostració visual.</p> <p class="funcionament__paragraph">Una vegada cliquis el botó "Començar" es descarregarà el fitxer abans mencionat. En executar-lo és posible que Windows t'adverteixi que l'arxiu és perillós degut a que aquest executa comandaments a l'ordinador, però això no vol dir (en aquest cas) que sigui perillós, si vols continuar amb la simulació només clica "Executar".<br>Quan s'obri el programa correctament es tancaran la majoria de procesos del teu ordinador i s'obrira una pestanya de la consola del sistema. Aquí et demanarà una <strong>CONTRASENYA: TdR</strong>. En introduir la contrasenya el sistema tornarà a la normalitat.</p>
+                <a href="index2.html" class="cta" onclick="mostrarAdvertencia();">Començar</a>
+                <pre id="contenido"></pre>
+                <script>
+                    function mostrarAdvertencia() {
+                        alert("Algunes pàgines malicioses podrien descarregar arxius sense el teu permís. Això és només una demostració segura.");
+                        }
+                </script>
+            </div>
+        </section>
+
+        <section class="memoria section" id="memoria">
+            <div class="memoria__container container">
+                <h2 class="section__title">Memòria del meu treball de recerca</h2>
+                <p class="memoria__paragraph">Pots veure i descarregar la memòria completa del meu treball de recerca aquí.</p>
+                <a href="Joel López Borrallo TdR L'espia darrere de la pantalla.pdf" class="cta";>Veure</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
